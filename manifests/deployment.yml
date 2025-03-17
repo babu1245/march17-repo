@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: babumarchrepo 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: babumarchrepo
+  template:
+    metadata:
+      labels:
+        app: babumarchrepo 
+    spec:
+      containers:
+        - name: babumarchrepo 
+          image: march17registry.azurecr.io/babumarchrepo
+          ports:
+          - containerPort: 80
