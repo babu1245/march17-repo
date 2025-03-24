@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: babuaugrepoaug24 
 spec:
-  replicas: 5
+  replicas: 6
   selector:
     matchLabels:
       app: babuaugrepoaug24
